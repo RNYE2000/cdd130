@@ -53,7 +53,7 @@ nav a:hover {
     grid-template: 78vh/50% 50%;
 }
 .about-info-container{
-    padding: 150px;
+    padding: 50px;
 }
 .about-img{
     display:flex;
