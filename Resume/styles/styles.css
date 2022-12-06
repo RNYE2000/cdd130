@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
 html, body{
     margin: 0;
-    body: 0;
     background: #16262E;
     color: #F5F9EA;
 }
@@ -22,6 +23,7 @@ header, nav {
 nav{
     justify-content:center;
     align-items:center;
+    font-family: "Holtwood",sans-serif;
 }
 
 nav a {
@@ -53,7 +55,9 @@ nav a:hover {
     grid-template: 78vh/50% 50%;
 }
 .about-info-container{
-    padding: 50px;
+    padding: 15px;
+    height:auto;
+    overflow:auto;
 }
 .about-img{
     display:flex;
@@ -125,4 +129,107 @@ footer {
 .social>a>img{
     width: 30px;
     height: 30px;
+}
+
+
+
+
+
+
+
+/* my work */
+
+.my-work-main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-header{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container-1, .slideshow-container-2{
+    display: flex;
+    width: 100%;
+    background: black;                
+    position: relative;
+    margin-bottom: 5vh;
+    box-shadow: 0 0 20px black;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.slider-caption{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #2E4756;
+    border-radius: 10px 10px 0 0;
+    z-index: 1; 
+    font-family: "Holtwood",sans-serif;
+}
+
+.slide{
+    width:100%;
+    min-width: 100%;
+    height: 60vh;
+    display: none;
+    
+}
+
+.active{
+    display:flex;
+    transition: opacity 2s ease;
+}
+
+.slide img{
+    max-height: 80%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.previous-btn, .next-btn{
+    position:absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    font-size: 2rem;
+}
+.previous-btn:hover, .next-btn:hover{
+    background: lightgray;
+    color: black;
+}
+
+.next-btn{
+    right:0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 0 0 10px 0;
+}
+
+.previous-btn{
+    left:0;
+    padding-right:2rem;
+    padding-left: 2rem;
+    border-radius: 0 0 0 10px;
 }

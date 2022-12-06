@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad1905c9ae.js" crossorigin="anonymous"></script>
+    <title>My Work</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Rory Nye-logos_transparent.png" alt="">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mywork.html">My Work</a>
+            <a href="">Previous Employment</a>
+            <a href="">Contact Info</a>
+        </nav>
+    </header>
+    <main class="my-work-main">
+        <div class="page-header">
+            <h1>My Work</h1>
+        </div>
+        <div class="main-container">
+            <div class="presentation"> 
+                <div class="slider-caption">
+                    <h2>Wheel Bolt Drawings</h2>
+                </div>
+                <div id="slideshow1" class="slideshow-container-1">
+                    <div class="previous-btn" onclick="ChangeSlide(1, -1)">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                
+                    <div class="slide slide1 active">
+                        <img class="slide-img" src="images/piston-my work.JPG">
+                    </div> 
+                    <div class="slide slide1">
+                        <img src="images/slideshow2/wheelbolt2.JPG" class="slide-img">
+                    </div>
+                    <div class="slide slide1">
+                        <img src="images/slideshow2/wheelbolt3.JPG"class="slide-img">
+                    </div>
+        
+                    <div class="next-btn" onclick="ChangeSlide(1,1)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="presentation">
+                <div class="slider-caption">
+                    <h2>Confined Space Access Tool Drawings</h2>
+                </div>
+                <div id="slideshow2" class="slideshow-container-2">
+                    <div class="previous-btn" onclick="ChangeSlide(2, -1)">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="slide slide2 active">
+                        <img class="slide-img" src="images/slideshow1/industry1.JPG">
+                    </div> 
+                    <div class="slide slide2">
+                        <img src="images/slideshow1/industry2.JPG" class="slide-img">
+                    </div>
+                    <div class="slide slide2">
+                        <img src="images/slideshow1/industry3.JPG" class="slide-img">
+                    </div>
+                    <div class="slide slide2">
+                        <img src="images/slideshow1/industry4.JPG" class="slide-img">
+                    </div>
+                
+                    <div class="next-btn" onclick="ChangeSlide(2,1)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                </div>
+            
+            <!-- <div id="slideshow1" class="slideshow-container-2">
+                <div class="slider-caption">
+                    <h3>Caption</h3>
+                </div>
+                <div class="slide slide1 active">
+                    <img class="slide-img" src="images/blueprint.jpg">
+                </div> 
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-site-navigation">
+                <h5 style="margin:0; padding:0;">Site Map</h5>
+                <hr />
+                <p class="link"><a href="">Site Plan</a></p>
+                <p class="link"><a href="">Contact Me</a></p>
+            </div>
+            <div class="copyright">
+                <p>© Rory Nye - 2022</p>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="middle-icon">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="./js/mywork.js"></script> 
+</html>
